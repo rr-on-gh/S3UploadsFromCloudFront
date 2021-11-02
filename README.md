@@ -14,7 +14,7 @@ The following makes sense only if CloudFront cost benefit outweigh the simplicit
  - Make sure to set the `s3:PutObject` and `s3:GetObject` actions in the bucket policy
 
 ### Step 2: Create a signed url
- - The `UrlSigner` class in the project has the java code to build the CloudFront signed URL
+ - The `UrlSigner` class in the `SignedUrlUpload` maven project has the Java code to build the CloudFront signed URL
  - Set the CloudFront details in the `cloudfront.properties` file
  - Place the private key that you used in CloudFront in `src/main/resources/private.pem`
  - Copy the generated signed URL and use it in the next step
